@@ -26,15 +26,18 @@ export const LocationList = () => {
         {
          <h3>{totalLocationsMessage}</h3>
         }
+        <div className="location__object">
         {
-            locations.map((locationObject) => {
+             locations.map((locationObject) => {
                 return <p className="location__card" key={`location--${locationObject}`}>
-                    <p>Name: {locationObject.name}</p>
+                    <p>{locationObject.name}</p>
                     <p>Address: {locationObject.address} {locationObject.city}, {locationObject.state} {locationObject.zip}</p>
                     <p>Phone: {locationObject.phone}</p>
                 </p>
+            
             })
-        } 
+        }
+        </div> 
         </>
     )
 }
