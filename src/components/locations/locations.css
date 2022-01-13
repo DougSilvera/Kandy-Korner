@@ -4,7 +4,7 @@
     background-color: aliceblue;
 }
 
-.location {
+.location__object {
     display: flex;
     flex-wrap: nowrap;
 }

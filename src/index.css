@@ -1,4 +1,7 @@
 @import './components/locations/locations.css';
+@import './components/products/products.css';
+@import './components/employees/employees.css';
+
 
 body {
   margin: 0;
