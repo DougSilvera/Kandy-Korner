@@ -5,3 +5,16 @@
     background-size: cover;
     width: max-content;
 }
+
+.employeeForm {
+    padding: 0.75rem;
+    margin: 2rem ;
+    background-color: aliceblue;
+    background-size: cover;
+    width: max-content;
+    justify-content: center;
+}
+.employeeFormParent {
+    display: flex;
+    justify-content: center;
+}

@@ -47,6 +47,7 @@ export const EmployeeForm = () => {
     }
 
     return (
+        <div className="employeeFormParent">
         <form className="employeeForm">
         <h2 className="employeeForm__title">New Hire Information</h2>
         <fieldset>
@@ -144,5 +145,6 @@ export const EmployeeForm = () => {
             Submit Information
         </button>
     </form>
+    </div>
     )
 }
