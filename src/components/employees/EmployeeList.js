@@ -24,7 +24,8 @@ export const EmployeeList = () => {
     useEffect(
         () => {
             updateMessage(`Kandy Korner has ${employees.length} employees`)
-        }
+        },
+        [employees]
     )
     return (
         <>

@@ -4,10 +4,16 @@ import { Route } from "react-router-dom/cjs/react-router-dom.min";
 import { ProductList } from "./products/products";
 import { EmployeeList } from "./employees/EmployeeList";
 import { EmployeeForm } from "./employees/NewEmployeeForm";
+import { CustomerList } from "./customers/customerList";
+import { KandyKornerHome } from "./homepage/home";
+import { PurchaseList } from "./purchases/purchaseList";
 
 export const ApplicationViews = () => {
     return (
         <>
+            <Route exact path="/">
+                <KandyKornerHome />
+            </Route>
             <Route path= "/locations">
                 <LocationList />
             </Route>
@@ -19,6 +25,12 @@ export const ApplicationViews = () => {
             </Route>
             <Route path="/employees/addNewHire">
                 <EmployeeForm />
+            </Route>
+            <Route path="/customers">
+                <CustomerList />
+            </Route>
+            <Route path="/purchases">
+                <PurchaseList />
             </Route>
         </>
     )

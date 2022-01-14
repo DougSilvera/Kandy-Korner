@@ -1,6 +1,8 @@
 @import './components/locations/locations.css';
 @import './components/products/products.css';
 @import './components/employees/employees.css';
+@import './components/customers/customers.css';
+@import './components/purchases/purchases.css';
 
 
 body {
@@ -15,4 +17,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logoParent {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
