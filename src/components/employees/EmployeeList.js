@@ -27,6 +27,14 @@ export const EmployeeList = () => {
         },
         [employees]
     )
+    const deleteEmployee = (id) => {
+        fetch(`http://localhost:8088/employees/${id}`, {
+            method: "DELETE"
+        })
+        .then(() => {
+            history.go("/employees")
+        })
+    }
     return (
         <>
             <h1>Employees</h1>
@@ -43,6 +51,7 @@ export const EmployeeList = () => {
                         <p>Name: {employeeObject.name}</p>
                         <p>Phone: {employeeObject.phone}</p>
                         <p>Manager: {mgrState(employeeObject)}</p>
+                        <button onClick={() => {deleteEmployee(employeeObject.id)}}>Delete Employee</button>
                     </section>
                 })
 
